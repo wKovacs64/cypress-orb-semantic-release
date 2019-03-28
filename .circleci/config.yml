@@ -1,0 +1,22 @@
+version: 2.1
+
+orbs:
+  cypress: cypress-io/cypress@1.5.1
+
+jobs:
+  release:
+    executor: cypress/base-10
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run: yarn semantic-release
+
+workflows:
+  build:
+    jobs:
+      - cypress/install:
+          yarn: true
+          build: yarn lint
+      - release:
+          requires:
+            - cypress/install
