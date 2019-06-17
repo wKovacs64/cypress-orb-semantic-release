@@ -20,6 +20,7 @@
   "devDependencies": {
     "@commitlint/cli": "7.5.2",
     "@commitlint/config-conventional": "7.5.0",
+    "@semantic-release/git": "7.0.12",
     "@wkovacs64/eslint-config-react": "2.1.0",
     "commitizen": "3.0.7",
     "cypress": "3.2.0",
