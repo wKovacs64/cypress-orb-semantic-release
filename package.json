@@ -12,6 +12,10 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wKovacs64/cypress-orb-semantic-release.git"
+  },
   "private": true,
   "devDependencies": {
     "@commitlint/cli": "7.5.2",
